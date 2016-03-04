@@ -10,6 +10,52 @@
     tools:context="com.example.notandi.diceroll.DiceActivity">
 
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/roll"
+        android:id="@+id/btnRoll"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pickNum"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btnScore"
+        android:layout_alignStart="@+id/btnScore" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:id="@+id/btnScore"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txtDie1"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/btnRoll"
+        android:layout_toStartOf="@+id/btnRoll" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txtDie2"
+        android:layout_alignTop="@+id/txtDie1"
+        android:layout_alignRight="@+id/pickNum"
+        android:layout_alignEnd="@+id/pickNum"
+        android:layout_toRightOf="@+id/btnRoll"
+        android:layout_toEndOf="@+id/btnRoll" />
 </RelativeLayout>
